@@ -259,7 +259,7 @@ textarea {
     .about__content-title {
       font-weight: 700;
       font-size: 2.8rem;
-      margin-bottom: 3rem; }
+      margin-bottom: 2rem; }
       @media only screen and (max-width: 37.5em) {
         .about__content-title {
           font-size: 2.4rem; } }
@@ -274,6 +274,22 @@ textarea {
         margin: 0 3px; }
       .about__content-details-para:last-child {
         margin-bottom: 4rem; }
+      .about__content-bio{
+          margin-bottom: 10px;
+          max-width: 60rem;
+          display: flex;
+          align-items: flex-start;
+          font-size: 1.8rem;
+          color: grey;
+      }
+      .about__content-year {
+          font-weight: bold;
+          margin-right: 20px;
+          width: 50px;
+          font-size: 1.8rem;
+          color: grey;
+      }
+      
 
 .projects__row {
   display: grid;
@@ -493,6 +509,17 @@ textarea {
         .project-details__links-btn:last-child {
           margin: 0; } }
 
+      .bio-board {
+          padding-left: 3.4em;
+          text-indent: -3.4em;
+      }
+      .bio-year {
+          font-weight: bold;
+          margin-right: 1em;
+      }
+      
+      
+      
 .header {
   position: fixed;
   width: 100%;
@@ -667,10 +694,21 @@ textarea {
     margin-bottom: 1.5rem;
     margin-right: 1.5rem;
     font-size: 1.6rem;
-    background: rgba(153, 153, 153, 0.2);
+    background: rgba(153, 153, 153, 0.2);  
     border-radius: 5px;
     font-weight: 600;
     color: #777; }
+  .skills__skill_green {
+    padding: 1rem 2rem;
+    margin-bottom: 1.5rem;
+    margin-right: 1.5rem;
+    font-size: 1.6rem;
+/*    background: rgba(153, 153, 153, 0.2); orginal */
+    background: rgba(10, 174, 112, 0.2);
+    border-radius: 5px;
+    font-weight: 700;
+    color: #000; }
+  
 
 .mouse {
   width: 25px;
