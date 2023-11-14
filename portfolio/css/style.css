@@ -97,7 +97,7 @@ textarea {
     .heading-sec__main--lt::after {
       content: '';
       background: #fff !important; }
-  .heading-sec__main::after {
+  .heading-sec__main::after { 
     content: '';
     position: absolute;
     top: calc(100% + 1.5rem);
@@ -247,7 +247,7 @@ textarea {
     text-align: center; }
 
 .about {
-  background: #fafafa; }
+    background: #fafafa; }
   .about__content {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -338,8 +338,13 @@ textarea {
         .projects__row-content-desc {
           font-size: 1.7rem; } }
 
+      .hobbies{
+          background: rgba(153, 153, 153, 0.1);
+      }      
+      
+      
 .contact {
-  background: linear-gradient(to right, rgba(0, 98, 185, 0.8), rgba(0, 98, 185, 0.8)), url(../../assets/svg/common-bg.svg);
+  background: linear-gradient(to right, rgba(0, 98, 185, 0.8) ,rgba(0, 98, 185, 0.8)), url(../../assets/svg/common-bg.svg);
   background-size: cover;
   background-position: center; }
   .contact__form-container {
@@ -419,7 +424,7 @@ textarea {
         width: 100%; } }
 
 .project-cs-hero {
-  color: #fff;
+  color: #fff; 
   background: linear-gradient(to right, rgba(0, 98, 185, 0.8), rgba(0, 98, 185, 0.8)), url(../../assets/svg/common-bg.svg);
   background-size: cover;
   background-position: center;
@@ -509,14 +514,16 @@ textarea {
         .project-details__links-btn:last-child {
           margin: 0; } }
 
-      .bio-board {
-          padding-left: 3.4em;
-          text-indent: -3.4em;
-      }
-      .bio-year {
-          font-weight: bold;
-          margin-right: 1em;
-      }
+      
+      
+.bio-board {
+    padding-left: 3.4em;
+    text-indent: -3.4em;
+}
+.bio-year {
+    font-weight: bold;
+    margin-right: 1em;
+}
       
       
       
@@ -709,7 +716,7 @@ textarea {
     font-weight: 700;
     color: #000; }
   
-
+  
 .mouse {
   width: 25px;
   height: 40px;
@@ -740,3 +747,69 @@ textarea {
   to {
     opacity: 0;
     top: 27px; } }
+
+
+
+.carousel-container {
+  width: 100%;
+  max-width: 100%;
+  height: 400px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.navigation .prev {
+  position: absolute;
+  z-index: 10;
+  font-size: 2.5rem;
+  top: 40%;
+  left: 2rem;
+  
+}
+
+.navigation .next {
+  right: 2rem;
+  position: absolute;
+  font-size: 2.5rem;
+  z-index: 10;
+  top: 40%;
+}
+
+.navigation .nav-btn {
+  background: rgba(255, 255, 255, 0.55);
+  cursor: pointer;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+.navigation .nav-btn:hover {
+  background: white;
+}
+
+.carousel {
+  margin-top: 2rem;
+  transition: all 0.3s ease;
+}
+
+.carousel img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  transition: all 0.3s ease;
+  border: 8px solid white;
+}
+
+.slider-item {
+  position: absolute;
+  display: none;
+}
+
+.slider-main {
+  display: block;
+}
